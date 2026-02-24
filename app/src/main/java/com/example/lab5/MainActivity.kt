@@ -116,7 +116,7 @@ class MainActivity : AppCompatActivity() {
             if (temperature > 10) {
                 temperature--
                 updateTemperature()
-                Toast.makeText(this, "Tенпература понижена: ${temperature}°C", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Tемпература понижена: ${temperature}°C", Toast.LENGTH_SHORT)
                     .show()
             } else {
                 Toast.makeText(this, "инимальная температура достигнута", Toast.LENGTH_SHORT).show()

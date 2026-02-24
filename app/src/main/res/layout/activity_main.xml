@@ -146,16 +146,18 @@
         app:layout_constraintStart_toEndOf="@id/tempDownButton"
         app:layout_constraintEnd_toStartOf="@id/lightoffButton"
         android:layout_marginEnd="8dp" />
+
     <Button
         android:id="@+id/lightoffButton"
         android:layout_width="0dp"
         android:layout_height="60dp"
+        android:backgroundTint="#E74C3C"
         android:text="Выключить"
         android:textSize="16sp"
-        android:backgroundTint="#E74C3C"
-        app:layout_constraintTop_toTopOf="@id/tempUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/lightonButton"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/tempUpButton" />
+
     <Button
         android:id="@+id/tempUpButn"
         android:layout_width="0dp"
