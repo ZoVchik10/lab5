@@ -123,8 +123,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         lightOnButton.setOnClickListener {
-            isLighton
-            true
+            isLighton=true
             if (lightLevel < 10) lightLevel = 50
             updateLight()
             Toast.makeText(this, "Oсвещение включено", Toast.LENGTH_SHORT).show()
@@ -132,7 +131,7 @@ class MainActivity : AppCompatActivity() {
         lightoffButton.setOnClickListener {
             isLighton = false
             updateLight()
-            Toast.makeText(this, "Ocseшение выклкчено", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Ocвeщение выключено", Toast.LENGTH_SHORT).show()
         }
         securityButton.setOnClickListener {
             isSecurityActive = !isSecurityActive
